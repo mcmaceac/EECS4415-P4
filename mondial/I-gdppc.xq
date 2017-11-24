@@ -1,4 +1,4 @@
-<countries>
+<gdp_per_capita>
 {
 	let $countryData :=
 		<data>
@@ -23,7 +23,9 @@
 		}
 		</data>
 		for $country in $countryData/country
-		order by $country/@gvt
-		return $country
+		group by $g := $country/@gvt
+		order by $g
+		return <government government="{$g}" gdp_total="{sum($country/@gdp)}" pop_total="{sum($country/@pop)}">
+		</government>
 }
-</countries>
+</gdp_per_capita>
