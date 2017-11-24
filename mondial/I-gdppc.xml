@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gdp_per_capita>
-  <government government="democracy" gdp_total="5.92379155E7" pop_total="5.147775515E9"/>
-  <government government="not-democracy" gdp_total="1.50840914E7" pop_total="1.823267185E9"/>
+  <countries government="democracy" gdppc="$11,507.48"/>
+  <countries government="non-democracy" gdppc="$8,273.11"/>
 </gdp_per_capita>

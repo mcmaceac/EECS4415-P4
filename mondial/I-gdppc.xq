@@ -14,7 +14,7 @@
 						not(fn:contains($country/government/text(), "dictator"))) then (
 					"democracy"
 				) else (
-					"not-democracy"
+					"non-democracy"
 				)
 			where exists($country/gdp_total)
 			return 
@@ -22,10 +22,19 @@
 				</country>
 		}
 		</data>
-		for $country in $countryData/country
-		group by $g := $country/@gvt
-		order by $g
-		return <government government="{$g}" gdp_total="{sum($country/@gdp)}" pop_total="{sum($country/@pop)}">
-		</government>
+	let $totalData :=
+		<data>
+		{
+			for $country in $countryData/country
+			group by $g := $country/@gvt
+			order by $g
+			return <countries government="{$g}" gdp_total="{sum($country/@gdp)}" pop_total="{sum($country/@pop)}">
+			</countries>
+		}
+		</data>
+		for $country in $totalData/countries
+		let $gdppc := $country/@gdp_total div $country/@pop_total * 1000000
+		return <countries government="{$country/@government}" gdppc="${format-number($gdppc, '#,##0.00')}">
+		</countries>
 }
 </gdp_per_capita>
