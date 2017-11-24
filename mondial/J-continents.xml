@@ -118,7 +118,7 @@
     <country name="Venezuela" size="912050"/>
     <country name="Virgin Islands" size="352"/>
   </continent>
-  <continent name="asia" size="43895250" countries="53">
+  <continent name="asia" size="43895254" countries="53">
     <country name="Afghanistan" size="647500"/>
     <country name="Armenia" size="29800"/>
     <country name="Azerbaijan" size="86600"/>
@@ -128,7 +128,7 @@
     <country name="Brunei" size="5770"/>
     <country name="Cambodia" size="181040"/>
     <country name="China" size="9596960"/>
-    <country name="Egypt" size="73105"/>
+    <country name="Egypt" size="73106"/>
     <country name="Gaza Strip" size="365"/>
     <country name="Georgia" size="69700"/>
     <country name="Hong Kong" size="1092"/>
@@ -139,7 +139,7 @@
     <country name="Israel" size="22072"/>
     <country name="Japan" size="377835"/>
     <country name="Jordan" size="89213"/>
-    <country name="Kazakhstan" size="2570565"/>
+    <country name="Kazakhstan" size="2570566"/>
     <country name="Kuwait" size="17820"/>
     <country name="Kyrgyzstan" size="198500"/>
     <country name="Laos" size="236800"/>
@@ -157,7 +157,7 @@
     <country name="Qatar" size="11000"/>
     <country name="Russia" size="12806400"/>
     <country name="Saudi Arabia" size="1960582"/>
-    <country name="Singapore" size="632"/>
+    <country name="Singapore" size="633"/>
     <country name="South Korea" size="98480"/>
     <country name="Sri Lanka" size="65610"/>
     <country name="Syria" size="185180"/>
@@ -165,7 +165,7 @@
     <country name="Tajikistan" size="143100"/>
     <country name="Thailand" size="514000"/>
     <country name="Timor-Leste" size="15007"/>
-    <country name="Turkey" size="757162"/>
+    <country name="Turkey" size="757163"/>
     <country name="Turkmenistan" size="488100"/>
     <country name="United Arab Emirates" size="75581"/>
     <country name="Uzbekistan" size="447400"/>
@@ -173,7 +173,7 @@
     <country name="West Bank" size="5655"/>
     <country name="Yemen" size="527970"/>
   </continent>
-  <continent name="australia" size="8932149" countries="28">
+  <continent name="australia" size="8932151" countries="28">
     <country name="American Samoa" size="199"/>
     <country name="Australia" size="7686850"/>
     <country name="Christmas Island" size="135"/>
@@ -182,7 +182,7 @@
     <country name="Fiji" size="18270"/>
     <country name="French Polynesia" size="4167"/>
     <country name="Guam" size="541"/>
-    <country name="Indonesia" size="422276"/>
+    <country name="Indonesia" size="422277"/>
     <country name="Kiribati" size="717"/>
     <country name="Marshall Islands" size="181"/>
     <country name="Micronesia" size="702"/>
@@ -190,7 +190,7 @@
     <country name="New Caledonia" size="19060"/>
     <country name="New Zealand" size="268680"/>
     <country name="Niue" size="260"/>
-    <country name="Norfolk Island" size="34"/>
+    <country name="Norfolk Island" size="35"/>
     <country name="Northern Mariana Islands" size="477"/>
     <country name="Palau" size="458"/>
     <country name="Papua New Guinea" size="461690"/>
@@ -203,7 +203,7 @@
     <country name="Vanuatu" size="14760"/>
     <country name="Wallis and Futuna" size="274"/>
   </continent>
-  <continent name="europe" size="10401005" countries="54">
+  <continent name="europe" size="10401007" countries="54">
     <country name="Albania" size="28750"/>
     <country name="Andorra" size="450"/>
     <country name="Austria" size="83850"/>
@@ -220,7 +220,7 @@
     <country name="Finland" size="337030"/>
     <country name="France" size="547030"/>
     <country name="Germany" size="356910"/>
-    <country name="Gibraltar" size="6"/>
+    <country name="Gibraltar" size="7"/>
     <country name="Greece" size="131940"/>
     <country name="Guernsey" size="194"/>
     <country name="Holy See" size="0"/>
@@ -239,7 +239,7 @@
     <country name="Macedonia" size="25333"/>
     <country name="Malta" size="320"/>
     <country name="Moldova" size="33700"/>
-    <country name="Monaco" size="1"/>
+    <country name="Monaco" size="2"/>
     <country name="Montenegro" size="14026"/>
     <country name="Netherlands" size="37330"/>
     <country name="Norway" size="324220"/>

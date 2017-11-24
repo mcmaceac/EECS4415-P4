@@ -14,7 +14,7 @@
 					order by $country/name
 					where $country/encompassed/@continent = $continents
 					return 
-						<country name="{$country/name}" size="{xs:integer($country/@area * $percentage * .01)}">
+						<country name="{$country/name}" size="{xs:integer(round($country/@area * $percentage * .01))}">
 						</country>
 				}
 				</continent>
