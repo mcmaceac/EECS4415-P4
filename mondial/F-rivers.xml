@@ -43,7 +43,7 @@
   <river name="Asahan">
     <country name="Indonesia"/>
   </river>
-  <river name="Bahr_el-Djebel">
+  <river name="Bahr_el">
     <country name="South Sudan"/>
   </river>
   <river name="Bani">
@@ -372,7 +372,7 @@
   <river name="Missouri_River">
     <country name="United States"/>
   </river>
-  <river name="Missouri_River">
+  <river name="Missouri_River river">
     <country name="United States"/>
   </river>
   <river name="Moldau">
@@ -451,7 +451,9 @@
   <river name="Oulujoki">
     <country name="Finland"/>
   </river>
-  <river name="Ounasjoki"/>
+  <river name="Ounasjoki river">
+    <country name="Finland"/>
+  </river>
   <river name="Paraguay">
     <country name="Argentina"/>
     <country name="Paraguay"/>
