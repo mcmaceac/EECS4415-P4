@@ -9,21 +9,34 @@ Within root <cities>, sort the <country> list by country name.
 In the extremely rare case a country has more than one largest city (that is, with the exact same reported population for each), report each, ordered by the cities' names.
 :)
 
-<alpha>
-{
-	let $doc := doc("http://www.eecs.yorku.ca/course_archive/2017-18/F/4415/project/mondial/dataset/mondial-2015.xml")
-	for $country in $doc/mondial/country
-	order by $country/name/text()
-	return <country name="{$country/name}">
+<alpha> {
+let $alpha :=
+	<alpha>
 	{
-		for $city in $country//city
-		let $closestYear := max($city/population/@year)
-		let $maxPop := max($country//city/population[@year=$closestYear])
-		let $population := data($city/population[@year=$closestYear])
-		return if ($population = $maxPop) then <alpha name="{$city/name[1]}" population="{ $population }" maxPop="{$maxPop}">
+		let $doc := doc("http://www.eecs.yorku.ca/course_archive/2017-18/F/4415/project/mondial/dataset/mondial-2015.xml")
+		for $country in $doc/mondial/country
+		order by $country/name
+		return <country name="{$country/name/text()}">
+		{
+			for $city in $country//city
+			let $latestYear := max($city/population/@year)
+			let $latestPop := $city/population[@year=$latestYear]
+			return if (exists($latestYear)) then (<city name="{$city/name[1]/text()}" year="{$latestYear}" pop="{$latestPop}">
+			</city>) else()
+		}
+		</country>
+	}
+	</alpha>
+
+	for $countries in $alpha/country
+	let $maxPop := max($countries/city/@pop)
+	where exists($maxPop)
+	return <country name="{$countries/@name}">
+	{
+		for $cities in $countries/city[@pop=$maxPop]
+		return <alpha name="{$cities/@name}" population="{xs:integer($maxPop)}">
 		</alpha>
-		else()
 	}
 	</country>
-}
-</alpha>
+}</alpha>
+
